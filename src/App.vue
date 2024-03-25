@@ -41,7 +41,7 @@ main {
   margin: 0 auto;
   padding: 30px;
   background-color: white;
-  width: 1400px;
+  width: 1000px;
   min-height: 300px;
 }
 

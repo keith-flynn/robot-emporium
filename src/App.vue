@@ -47,7 +47,7 @@ main {
 
 header {
   background-color: #999;
-  width: 1400px;
+  width: 1000px;
   margin: 0 auto;
 }
 

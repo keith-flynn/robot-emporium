@@ -87,6 +87,8 @@ const selectedRobot = computed(() => ({
   base: availableParts.bases[selectedBaseIndex.value],
 }));
 
+const headBorderColor = computed(() => (selectedRobot.value.head.onSale ? 'red' : '#aaa'));
+
 const addToCart = () => {
   const robot = selectedRobot.value;
   const cost = robot.head.cost +
@@ -162,12 +164,16 @@ const selectPreviousBase = () => {
 
 </script>
 
-<style>
+<style scoped>
 .part {
   position: relative;
   width: 200px;
   height: 200px;
   border: 3px solid #aaa;
+}
+
+.top.part {
+  border: 3px solid v-bind(headBorderColor);
 }
 
 .part img {

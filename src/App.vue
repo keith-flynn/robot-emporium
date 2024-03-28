@@ -18,6 +18,7 @@
 <script>
 // import HomePage from './home/HomePage.vue';
 import RobotBuilder from './build/RobotBuilder.vue';
+// import ProductSearch from './search/ProductSearch.vue';
 
 export default {
   name: 'App',
@@ -36,7 +37,9 @@ body {
   background: linear-gradient(to bottom, #555, #999);
   background-attachment: fixed;
 }
+</style>
 
+<style scoped>
 main {
   margin: 0 auto;
   padding: 30px;

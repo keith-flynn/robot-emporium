@@ -1,5 +1,5 @@
 <template>
-  <div class="part">
+  <div class="part" :class="position">
     <img :src="selectedPart.imageUrl" alt="part" />
     <button @click="selectPreviousPart()" class="prev-selector"></button>
     <button @click="selectNextPart()" class="next-selector"></button>
@@ -10,7 +10,7 @@
 <script setup>
 import { computed, ref } from 'vue';
 
-const props = defineProps(['parts']);
+const props = defineProps(['parts', 'position']);
 const selectedPartIndex = ref(0);
 const selectedPart = computed(() => props.parts[selectedPartIndex.value]);
 

@@ -17,5 +17,6 @@ module.exports = {
     'linebreak-style': 0,
     'comma-dangle': ['error', 'always-multiline'],
     'operator-linebreak': 0,
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 };

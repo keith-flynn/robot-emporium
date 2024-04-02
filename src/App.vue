@@ -11,21 +11,13 @@
   </header>
   <main>
     <!-- <HomePage msg="Welcome to Your Vue.js App"/> -->
-    <RobotBuilder />
+    <router-view />
   </main>
 </template>
 
-<script>
-// import HomePage from './home/HomePage.vue';
-import RobotBuilder from './build/RobotBuilder.vue';
-// import ProductSearch from './search/ProductSearch.vue';
+<script setup>
+// import { ref, provide } from 'vue';
 
-export default {
-  name: 'App',
-  components: {
-    RobotBuilder,
-  },
-};
 </script>
 
 <style>
